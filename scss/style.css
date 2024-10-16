@@ -1,5 +1,5 @@
 .container {
-  max-width: 1200px;
+  max-width: 1300px;
   margin: 0 auto;
 }
 
@@ -145,7 +145,7 @@ table {
 }
 .header__top {
   display: flex;
-  justify-content: center;
+  justify-content: end;
   gap: 150px;
 }
 .header__item {
@@ -177,13 +177,57 @@ table {
   color: #ffffff;
 }
 .header__search {
-  margin: 40px;
-  width: 400px;
-  height: 70px;
-  color: rgba(255, 255, 255, 0.2);
-  border: 1px;
+  margin: 45px 0 0 450px;
+  background-color: #f0e0bf;
+  border-radius: 30px;
+  padding: 10px;
+  width: 300px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.header__search input {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-size: 16px;
+  padding: 10px;
+  flex-grow: 1;
+  color: #333;
+  filter: blur(2px);
+}
+.header__search input::-moz-placeholder {
+  color: #fff;
+}
+.header__search input:-ms-input-placeholder {
+  color: #fff;
+}
+.header__search input::placeholder {
+  color: #fff;
+}
+.header__button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.header__button img {
+  width: 20px;
+  height: 20px;
+  margin: 5px 0 0 40px;
+}
+.header__shop {
+  width: 300px;
+  height: 150px;
+  border-radius: 30px;
+  background-color: #fff;
+  padding: 10px;
+  flex-grow: 1;
+  color: #333;
+  border: 2px solid #000;
+  filter: blur(20px);
 }
 
+.product {
+  padding: 100px 0;
+}
 .product__top {
   display: flex;
   gap: 160px;
@@ -213,6 +257,7 @@ table {
 }
 .product__title {
   margin: 140px 0 30px;
+  width: 40%;
   font-family: "Work Sans", sans-serif;
   font-size: 75.63px;
   font-weight: 600;
@@ -227,4 +272,233 @@ table {
   line-height: 30.42px;
   text-align: left;
   color: #4f4f4f;
+}
+.product__subtitle img {
+  margin-left: 10px;
+}
+.product__subtitle:hover {
+  font-size: 27px;
+}
+.product__foto {
+  display: flex;
+  gap: 65px;
+}
+.product__collection {
+  margin-top: 45px;
+  width: 350px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 40px;
+}
+.product__scroll {
+  display: flex;
+  gap: 80px;
+  margin-left: 8px;
+}
+.product__scroll h4 {
+  font-family: "Gotham", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 22.61px;
+  letter-spacing: -0.05em;
+  color: #292929;
+}
+.product__scroll p {
+  margin: 10px 0;
+  font-family: "Gotham", sans-serif;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 32.29px;
+  letter-spacing: -0.05em;
+  color: #292929;
+}
+.product__labels {
+  margin-left: 8px;
+  display: flex;
+  gap: 8px;
+  margin-top: 16px;
+}
+.product__label {
+  padding: 4px 8px;
+  background-color: #f0e4d7;
+  color: #dcb47a;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  border: 1px solid #dcb47a;
+}
+
+.interior {
+  padding: 60px;
+}
+.interior__title {
+  font-family: "Work Sans", sans-serif;
+  font-size: 64px;
+  font-weight: 600;
+  line-height: 75.07px;
+  text-align: center;
+  color: #081323;
+}
+.interior__desc {
+  margin: 35px 0 80px;
+  font-family: "Work Sans", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 28.15px;
+  text-align: center;
+  color: #4f4f4f;
+}
+.interior__collection {
+  display: flex;
+  gap: 70px;
+  margin: 40px 0;
+}
+.interior__foto {
+  position: relative;
+}
+.interior__foto img:hover {
+  filter: grayscale(80%);
+}
+.interior__text {
+  position: absolute;
+  top: 38%;
+  left: 22%;
+  font-family: "Work Sans", sans-serif;
+  font-size: 64px;
+  font-weight: 600;
+  line-height: 75.07px;
+  align-items: center;
+  color: #fff;
+}
+
+.text {
+  padding: 70px;
+  background-color: #262626;
+}
+.text__title h2 {
+  font-family: "Work Sans", sans-serif;
+  font-size: 62.83px;
+  font-weight: 600;
+  line-height: 81.68px;
+  text-align: center;
+  color: #fff;
+}
+.text__title span {
+  font-family: "Work Sans", sans-serif;
+  font-size: 62.83px;
+  font-weight: 600;
+  line-height: 81.68px;
+  text-align: center;
+  color: #dcb47a;
+}
+.text__title p {
+  margin: 10px 0 50px;
+  font-family: "Work Sans", sans-serif;
+  font-size: 20.94px;
+  font-weight: 400;
+  line-height: 27.23px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.8);
+}
+.text__but {
+  display: flex;
+  justify-content: center;
+}
+.text__button {
+  width: 205.19px;
+  height: 64.39px;
+  background-color: #dcb47a;
+  border-radius: 60px;
+  font-family: "Work Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19.2px;
+  text-align: center;
+  color: #fff;
+}
+
+.footer {
+  padding: 160px 0 60px;
+}
+.footer__top {
+  display: flex;
+  gap: 90px;
+}
+.footer__content {
+  margin-top: 60px;
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  width: 360px;
+  height: 60px;
+}
+.footer__input {
+  border: none;
+  outline: none;
+  padding: 10px 15px;
+  font-size: 1rem;
+  flex: 1;
+  color: #333;
+  width: 300px;
+}
+.footer__input::-moz-placeholder {
+  color: #878787;
+}
+.footer__input:-ms-input-placeholder {
+  color: #878787;
+}
+.footer__input::placeholder {
+  color: #878787;
+}
+.footer__button {
+  margin-right: 10px;
+  width: 130px;
+  background-color: #d8a96d;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 30px;
+  transition: background-color 0.3s;
+}
+.footer__button:hover {
+  background-color: #b8860b;
+}
+.footer__bottom {
+  display: flex;
+}
+.footer__text {
+  margin-right: 60px;
+  max-width: 200px;
+}
+.footer__link {
+  margin: 10px 0;
+  font-family: "Work Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  color: #000000;
+}
+.footer__link:first-child {
+  margin: 0 0 25px;
+  font-family: "Work Sans", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 33.6px;
+  color: #000000;
+}
+.footer__subtitle {
+  margin-top: 50px;
+  font-family: "Work Sans", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 28.15px;
+  text-align: center;
+  color: #000000;
 }/*# sourceMappingURL=style.css.map */

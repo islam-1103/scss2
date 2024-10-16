@@ -5,7 +5,7 @@
 
   &__top {
     display: flex;
-    justify-content: center;
+    justify-content: end;
     gap: 150px;
   }
   &__item {
@@ -31,7 +31,7 @@
     color: #ffffff;
   }
   &__desc {
-    font-family: 'Work Sans', sans-serif;
+    font-family: "Work Sans", sans-serif;
     font-size: 24px;
     font-weight: 400;
     line-height: 36px;
@@ -40,11 +40,50 @@
   }
 
   &__search {
-    margin: 40px;
-    width: 400px;
-    height: 70px;
-    color: #FFFFFF33;
-    border: 1px;
+    margin: 45px 0 0 450px ;
+    background-color: #f0e0bf;
+    border-radius: 30px;
+    padding: 10px;
+    width: 300px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+    input {
+      border: none;
+      outline: none;
+      background-color: transparent;
+      font-size: 16px;
+      padding: 10px;
+      flex-grow: 1;
+      color: #333;
+      filter: blur(2px);
+    }
+
+    input::placeholder {
+      color: #fff;
+    }
   }
 
+  &__button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+
+    img {
+      width: 20px;
+      height: 20px;
+      margin: 5px 0 0 40px
+    }
+  }
+
+  &__shop {
+    width: 300px;
+    height: 150px;
+    border-radius: 30px;
+    background-color: #fff;
+    padding: 10px;
+    flex-grow: 1;
+    color: #333;
+    border: 2px solid #000;
+    filter: blur(20px);
+  }
 }

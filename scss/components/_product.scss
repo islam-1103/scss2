@@ -1,4 +1,5 @@
 .product {
+  padding: 100px 0;
   &__top {
     display: flex;
     gap: 160px;
@@ -32,6 +33,7 @@
 
   &__title {
     margin: 140px 0 30px;
+    width: 40%;
     font-family: "Work Sans", sans-serif;
     font-size: 75.63px;
     font-weight: 600;
@@ -40,11 +42,74 @@
     color: #081323;
   }
   &__subtitle {
-    font-family: 'Work Sans', sans-serif;
+    font-family: "Work Sans", sans-serif;
     font-size: 25.93px;
     font-weight: 500;
     line-height: 30.42px;
     text-align: left;
     color: #4f4f4f;
+    img {
+      margin-left: 10px;
+    }
+
+    &:hover {
+      font-size: 27px;
+    }
+  }
+
+  &__foto {
+    display: flex;
+    gap: 65px;
+  }
+
+  &__collection {
+    margin-top: 45px;
+    width: 350px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 40px;
+  }
+
+  &__scroll {
+    display: flex;
+    gap: 80px;
+    margin-left: 8px;
+    h4 {
+      font-family: "Gotham", sans-serif;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 22.61px;
+      letter-spacing: -0.05em;
+      color: #292929;
+    }
+    p {
+      margin: 10px 0;
+      font-family: "Gotham", sans-serif;
+      font-size: 28px;
+      font-weight: 400;
+      line-height: 32.29px;
+      letter-spacing: -0.05em;
+      color: #292929;
+    }
+  }
+
+  &__labels {
+    margin-left: 8px;
+    display: flex;
+    gap: 8px;
+    margin-top: 16px;
+  }
+
+  &__label {
+    padding: 4px 8px;
+    background-color: #f0e4d7;
+    color: #dcb47a;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    border: 1px solid #dcb47a;
   }
 }
