@@ -1,0 +1,50 @@
+.product {
+  &__top {
+    display: flex;
+    gap: 160px;
+  }
+  &__bottom {
+    display: flex;
+    gap: 20px;
+    img {
+      max-width: 100%;
+    }
+  }
+
+  &__item {
+    h3 {
+      font-family: "Work Sans", sans-serif;
+      font-size: 27.37px;
+      font-weight: 500;
+      line-height: 32.11px;
+      color: #081323;
+    }
+    p {
+      margin-top: 15px;
+      font-family: "Work Sans", sans-serif;
+      font-size: 17.11px;
+      font-weight: 500;
+      line-height: 20.07px;
+      text-align: left;
+      color: #828282;
+    }
+  }
+
+  &__title {
+    margin: 140px 0 30px;
+    font-family: "Work Sans", sans-serif;
+    font-size: 75.63px;
+    font-weight: 600;
+    line-height: 88.72px;
+    text-align: left;
+    color: #081323;
+  }
+  &__subtitle {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 25.93px;
+    font-weight: 500;
+    line-height: 30.42px;
+    text-align: left;
+    color: #4f4f4f;
+  }
+}
