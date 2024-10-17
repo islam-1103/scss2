@@ -181,6 +181,7 @@ table {
   color: #ffffff;
 }
 .header__search {
+  overflow: hidden;
   display: flex;
   margin: 45px 0 0 450px;
   background-color: #f0e0bf;
@@ -188,8 +189,12 @@ table {
   padding: 8px;
   width: 300px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  border: 2px solid #fff;
 }
 .header__search input {
+  border: 2px solid #fff;
   border: none;
   outline: none;
   background-color: transparent;
@@ -197,26 +202,42 @@ table {
   padding: 9px;
   flex-grow: 1;
   color: #333;
-  filter: blur(2px);
 }
 .header__search input::-moz-placeholder {
   color: #fff;
+  font-family: "Work Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 23.46px;
+  text-align: left;
 }
 .header__search input:-ms-input-placeholder {
   color: #fff;
+  font-family: "Work Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 23.46px;
+  text-align: left;
 }
 .header__search input::placeholder {
   color: #fff;
+  font-family: "Work Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 23.46px;
+  text-align: left;
 }
 .header__button {
   background-color: transparent;
+  border-radius: 50px;
   border: none;
+  background-color: #525A55;
   cursor: pointer;
 }
 .header__button img {
   width: 20px;
   height: 20px;
-  margin: 5px 0 0 40px;
+  margin: 2px 2px;
 }
 .header__shop {
   position: relative;
