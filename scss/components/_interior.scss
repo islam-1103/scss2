@@ -23,6 +23,7 @@
   &__collection {
     display: flex;
     gap: 70px;
+    align-items: center;
     margin: 40px 0;
   }
 
@@ -30,17 +31,15 @@
     position: relative;
 
     img {
-      &:hover {
-        filter: grayscale(80%);
-      }
+      filter: grayscale(50%);
       
     }
   }
 
   &__text {
     position: absolute;
-    top: 38%;
-    left: 22%;
+    top: 40%;
+    left: 26%;
     font-family: 'Work Sans', sans-serif;
     font-size: 64px;
     font-weight: 600;

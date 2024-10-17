@@ -144,15 +144,16 @@
     display: inline-block;
     width: 360px;
     margin-top: 20px;
+    
   }
 
   &__subtext {
     position: absolute;
-    background-color: rgba(255, 255, 255, 0.48);
+    backdrop-filter: blur(10px);
+    background-color: rgba(205, 203, 203, 0.48);
     padding: 24px 30px;
     border-radius: 50px;
-    text-align: center;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center; 
 
     h3 {
       font-family: "Work Sans", sans-serif;
