@@ -60,9 +60,13 @@
   &__foto {
     display: flex;
     gap: 65px;
+    overflow-x: scroll;
   }
 
   &__collection {
+    grid-template-columns: auto;
+    grid-gap: 20px;
+    flex: none;
     margin-top: 45px;
     width: 350px;
     background: white;
@@ -97,6 +101,10 @@
     }
   }
 
+  &__icon {
+    margin-left: 75px;
+  }
+
   &__labels {
     margin-left: 8px;
     display: flex;
@@ -111,5 +119,9 @@
     border-radius: 20px;
     font-size: 0.8rem;
     border: 1px solid #dcb47a;
+
+    &:hover {
+      cursor: pointer;
+    }
   }
 }
